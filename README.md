@@ -13,14 +13,10 @@ See two snap shots of the atomic system color coordinated by atomic dispalcement
 
 ## The Challenge
 These simulations are millions of atoms and use a very high data export frequency, ~5 simulated picoseconds, to
-get dense enough data to measure the shape and behaviour of these waves. That is too much data to send to a local
-machince to process. It would also take a significant ammount of time to process in serial to generate good visualizations.
-The visualizations are not strictly necessary to the analysis of this data but they will be necessary to present this work.
-As a point of reference, just exctracting the atomic displacemetns from the raw data files takes 30 min on 16 cores using 
+get dense enough data to measure the shape and behaviour of these waves. That is too much data to send to a local machine to process. It would also take a significant ammount of time to process in serial to generate good visualizations. The visualizations are not strictly necessary to the analysis of this data but they will be necessary to present this work. As a point of reference, just exctracting the atomic displacemetns from the raw data files takes 30 min on 16 cores using 
 an mpi implementation of python using all vector based arithmatic. C will be significantly faster but generating visualizations
 in serial will still take for too long.
-
-I would like to generate 
+I would like to generate videos of the wave propegation.
 
 ## The Solution
 My implementation will be carried out in 3 steps.
