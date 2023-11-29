@@ -5,7 +5,8 @@ I am simulating mechanical surface waves in 2D sheets of a particular 2D materia
 The sheets are perturbed which produces a mechnical wave that can be seprated from the background
 thermal motion and rippling. 
 
-See two snap shots of the atomic system color coordinated by atomic dispalcement from the background
+See two snap shots of the atomic system color coordinated by atomic dispalcement from the background.
+
 ![image](figs/Ti3C2_450_270_50_3000.png)
 
 ![image](figs/Ti3C2_450_270_50_6000.png)
