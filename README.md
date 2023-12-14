@@ -29,3 +29,9 @@ My implementation will be carried out in 3 steps.
 
 This is not curently intended to be an in-situ visualization package, the data is being generated with the LAMMPS package and
 this would need to integrated with LAMMPS, which is open-source, or I would need to write my own implementation of the complex potential being used here. 
+
+## The Result
+
+I learned a few things from this project. First and foremost I am grateful for the visualization software I've used so far in my career, becuase it is much more difficult than I thought. I just finished an MPI adaptation of a serial implementation that decomposed the work over frames. In the future adding the compressed octree representation would be a good addition to allow for clipping atoms before rendering. See the video SAW.mp4 for my final render of a vibration in a MXene single layer sheet. 
+
+![](SAW.mp4)
