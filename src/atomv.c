@@ -271,10 +271,6 @@ Read atomic coordinates from lammps dump file
   char line[MAX_LINE_LENGTH] = {0};
   FILE * file = fopen(pattern,"r");
 
-  if (file == NULL) {
-    printf("Damn");
-  }
-
   while (fgets(line, MAX_LINE_LENGTH, file)){
       if (strstr(line, "ITEM: BOX BOUNDS") != NULL) {
         for (l=0; l<3; l++) fscanf(file,"%f%f",&min_ext[l],&max_ext[l]);
@@ -312,9 +308,8 @@ void animate() {
     makeCurframeGeom();
     glutPostRedisplay();
     writeFrame();
+    step = step + stepSize;
   }
-
-  step = step + stepSize;
 
 }
 
@@ -372,7 +367,7 @@ int main(int argc, char **argv) {
   setStepRange(nprocs,myid);
 
   /* Read atomic coordinates from an MD-configuration file */
-  readDump("/Users/parkerh/Documents/research/USC/MXenes/dump/run_Ti3C2_450_270_40/dump.Ti3C2_450_270_4.0.0");
+  readDump("/Users/parkerh/Documents/research/USC/MXenes/dump/run_Ti3C2_450_270_40/dump.Ti3C2_450_270_6.0.0");
 
   /* Set up an window */
   /* Initialize display mode */
